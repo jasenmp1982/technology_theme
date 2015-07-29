@@ -70,4 +70,15 @@
 <body>
     
 <section id="main-content">
+
+
+    <div id="top-section">
+        
+        <?php rotating_banner(); ?>
+        <!-- /Rotating Banner -->
+        
+        <?php call_to_action(); ?>
+        <!-- /Call to Action -->
     
+    </div>
+    <!-- /Top Section -->

@@ -1,6 +1,6 @@
 <?php
 
-//Scripts & Styles
+// Scripts & Styles
 
 function theme_scripts() {
     
@@ -18,3 +18,21 @@ function theme_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
+
+// Enable support for HTML5 markup.
+
+add_theme_support( 'html5', array(
+    
+    'comment-list',
+    'search-form',
+    'comment-form',
+    'gallery',
+    'caption',
+
+) );
+
+// Custom Functions
+
+require get_template_directory() . '/inc/extras.php';
+
+// Theme Admin Menu
