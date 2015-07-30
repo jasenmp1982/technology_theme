@@ -7,8 +7,18 @@
             <div class="col-lg-12">
 
                 <article id="post-<?php the_ID(); ?> " <?php post_class(); ?> >
+                
+                    <?php
 
-                <?php the_content(); ?>
+                        if ( get_option('twitter_url') ) {
+
+                            echo 'hello world';
+
+                        }
+
+                    ?>
+
+                    <?php the_content(); ?>
 
                 </article>
 
